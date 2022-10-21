@@ -10,7 +10,8 @@ const LeftSideNav = () => {
       .then((data) => setCategories(data));
   }, []);
   return (
-    <div>
+    <div className="md:position-fixed mt-2 ">
+      <h5>All Categories</h5>
       <div>
         {categories.map((category) => (
           <p key={category.id}>
